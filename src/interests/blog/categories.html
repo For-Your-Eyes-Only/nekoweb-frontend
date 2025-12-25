@@ -4,22 +4,20 @@ pagination:
   size: 1
   alias: category
 permalink: "interests/blog/categories/{{ category | slugify }}/index.html"
-layout: navigationBar.njk
+layout: textBoxLayout.njk
 CSSNesting: ../../../../CSS/
 pageName: blog
 pageNesting: ../../../../
 ---
-<div id="main">
-    <div id="text-box">
-        <h2>Category: {{ category }}</h2>
+<h2>Category: {{ category }}</h2>
 
-        {% set posts = collections.post | filterByCategory(category) %}
+<p>
+    <a id="Back-Button" href="{{ page.pageNesting }}/interests/blog/blog.html">Back to all posts</a>
+</p>
 
-        {%- for post in posts | reverse -%}
-            <p>
-                {{ post.data.title }} - {{ post.date }}<br/>
-                {% excerpt post %}
-            </p>
-        {%- endfor -%}
-    </div>
-</div>
+{% set posts = collections.post | filterByCategory(category) %}
+
+{%- for post in posts | reverse -%}
+        {{ post.data.title }} <br/> {{ post.date | readableDateTime }}<br/>
+        {% excerpt post %}
+{%- endfor -%}

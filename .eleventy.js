@@ -15,6 +15,19 @@ module.exports = function (eleventyConfig) {
   // Needed for RSS feed generation
   eleventyConfig.addPlugin(pluginRss);
 
+  // Readable date filter
+  eleventyConfig.addFilter("readableDateTime", (dateObj) => {
+    if (!dateObj) return "";
+    return new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true
+    }).format(dateObj);
+  });
+
   /* BLOG POST SECTION START */
 	function extractExcerpt(post) {
 		if(post.templateContent.indexOf('</p>') > 0) {
