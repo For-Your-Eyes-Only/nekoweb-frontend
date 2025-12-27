@@ -22,9 +22,6 @@ module.exports = function (eleventyConfig) {
       year: "numeric",
       month: "long",
       day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-      hour12: true
     }).format(dateObj);
   });
 

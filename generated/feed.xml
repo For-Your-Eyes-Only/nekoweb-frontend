@@ -4,7 +4,7 @@
   <subtitle></subtitle>
   <link href="https://foryoureyesonly.nekoweb.org/feed.xml" rel="self"/>
   <link href="https://foryoureyesonly.nekoweb.org/"/>
-  <updated>2027-01-12T00:00:00Z</updated>
+  <updated>2025-12-27T00:00:00Z</updated>
   <id>https://foryoureyesonly.nekoweb.org/</id>
   <author>
     <name>Hunter</name>
@@ -12,9 +12,21 @@
   </author>
   
   <entry>
+    <title>Life Update</title>
+    <link href="https://foryoureyesonly.nekoweb.org/posts/2025/12/lifeUpdate1.html"/>
+    <updated>2025-12-27T00:00:00Z</updated>
+    <id>https://foryoureyesonly.nekoweb.org/posts/2025/12/lifeUpdate1.html</id>
+    <content type="html">&lt;p&gt;Learning Japanese has been tough. I might be going the hard route of wanting to know how to read all the Kanji for the N5 Vocabulary before moving on but I think it&#39;ll heavily benefit me.&lt;/p&gt;
+&lt;p&gt;Things are going well with Millenium, my TTRPG. I&#39;m very close to having all the pages cleaned up. I&#39;ve also finished writing up the first five out of ten levels of progression. Hopefully it sticks after playtesting. I&#39;d like to release an open beta soon.&lt;/p&gt;
+&lt;p&gt;Oh also, I&#39;ve developed some sorta wrist pain from my day job + drumming. I really do not want to give up drumming so I&#39;m looking for solutions.&lt;/p&gt;
+&lt;p&gt;Last but not least, I got my girlfriend to try building her own site on Nekoweb and she&#39;s hooked! I can&#39;t wait to add her to my webring!&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>First blog post to kick off my website</title>
     <link href="https://foryoureyesonly.nekoweb.org/posts/2025/12/firstPost.html"/>
-    <updated>2027-01-12T00:00:00Z</updated>
+    <updated>2025-12-25T00:00:00Z</updated>
     <id>https://foryoureyesonly.nekoweb.org/posts/2025/12/firstPost.html</id>
     <content type="html">&lt;p&gt;Its Christmas day and I&#39;ve finally got my blog feature on my website working. Further progress coming for my Millenium and Music pages.&lt;/p&gt;
 </content>

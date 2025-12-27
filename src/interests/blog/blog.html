@@ -6,7 +6,7 @@ pageNesting: ../../
 ---
     <div id="main">
         <div id="category-links">
-            <h2>Categories</h2>
+            <h1>Categories</h1>
             <ul>
                 {%- for category in collections.categories -%}
                     <li>
@@ -19,10 +19,12 @@ pageNesting: ../../
             <h1>Blog Posts</h1>
             <ul>
                 {%- for post in collections.post | reverse -%}
+                    <h2>{{ post.data.title }}</h2>
+                    <h3>{{ post.date | readableDateTime }}</h3>
                     <p>
-                        {{ post.data.title }} <br/> {{ post.date | readableDateTime }}<br/>
                         {% excerpt post %}
                     </p>
+                    </br>
                 {%- endfor -%}
             </ul>
         </div>

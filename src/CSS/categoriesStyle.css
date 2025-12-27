@@ -1,0 +1,75 @@
+#main {
+    font-size: 1.25em;
+}
+
+#back-button {
+    margin-top: 1em;
+    display: inline-block;
+    background-color: hwb(199 47% 23%);
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#category-links {
+    background: rgba(0, 0, 0, 0.6);  /* semi-transparent black */
+    color: white;                    /* text color */
+    border-radius: 10px;             /* rounded corners */
+    width: auto;
+    height: fit-content;
+    padding-top: .25em;                  /* space inside the box */
+    padding-bottom: .25em;
+    margin-top: 2%;                     /* space around the box */
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+#category-links ul {
+    list-style-type: none;
+}
+
+#category-links li {
+    display: inline; /* Display list items inline */
+}
+
+#category-links a {
+    color: rgb(182, 182, 182); /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#text-box {
+    background: rgba(0, 0, 0, 0.6);  /* semi-transparent black */
+    color: rgb(198, 198, 198);                    /* text color */
+    border-radius: 10px;             /* rounded corners */
+    width: auto;
+    height: 75vh;
+    overflow: scroll;
+    padding-right: 1.0em;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+}
+
+#text-box h1 {
+    text-align: center;
+}
+
+#text-box h2 {
+    color: rgb(174, 12, 44)
+}
+
+#text-box h3 {
+    color: rgb(123, 8, 31)
+}
+
+/* Background Image */
+body {
+    background-image: url('../graphics/japan.gif');
+    background-size: cover;       /* Scale image to cover entire window */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center;  /* Center the image */
+    margin: 0;                    /* Remove default body margin */
+    height: 100vh;                /* Ensure body fills viewport height */
+}
