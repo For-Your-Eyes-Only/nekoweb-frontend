@@ -4,12 +4,21 @@
   <subtitle></subtitle>
   <link href="https://foryoureyesonly.nekoweb.org/feed.xml" rel="self"/>
   <link href="https://foryoureyesonly.nekoweb.org/"/>
-  <updated>2025-12-27T00:00:00Z</updated>
+  <updated>2025-12-28T00:00:00Z</updated>
   <id>https://foryoureyesonly.nekoweb.org/</id>
   <author>
     <name>Hunter</name>
     <email></email>
   </author>
+  
+  <entry>
+    <title>Just found out about deploy2nekoweb</title>
+    <link href="https://foryoureyesonly.nekoweb.org/posts/2025/12/webdevUpdate.html"/>
+    <updated>2025-12-28T00:00:00Z</updated>
+    <id>https://foryoureyesonly.nekoweb.org/posts/2025/12/webdevUpdate.html</id>
+    <content type="html">&lt;p&gt;So I was under the impression that if I wanted to update my site immediately without importing a zip everytime I&#39;d need to use nekoGit and subscribe monthly. Turns out theres an API with all sorts of nice features. That means I can post like this and have the post up in a matter of minutes. Thank god. Oh also dont forget to subscribe to my RSS feed, so you can see quality content like this.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Life Update</title>
