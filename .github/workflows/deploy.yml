@@ -12,7 +12,7 @@ jobs:
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@v1.0.1
         with:
-          nekoweb-api-key: ${{ secrets.f596aa1f8d9b0b080d694ac0b349e1ad0f7a41d567bbf3a2e29786b32e30a0b7 }}
+          nekoweb-api-key: ${{ secrets.NEKO_WEB_API_KEY }}
           nekoweb-domain: 'foryoureyesonly.nekoweb.org'
           nekoweb-username: 'foryoureyesonly'
           directory: '../../generated'
