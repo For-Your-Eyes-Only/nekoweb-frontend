@@ -15,5 +15,5 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKO_WEB_API_KEY }}
           nekoweb-domain: 'foryoureyesonly.nekoweb.org'
           nekoweb-username: 'foryoureyesonly'
-          directory: '../../generated'
+          directory: 'generated'
 
