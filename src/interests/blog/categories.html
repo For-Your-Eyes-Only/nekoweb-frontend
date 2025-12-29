@@ -19,7 +19,7 @@ pageNesting: ../../../../
     <div id="text-box">
       {% set posts = collections.post | filterByCategory(category) %}
       <ul>
-        {%- for post in collections.post | reverse -%}
+        {%- for post in posts| reverse -%}
             <h2>{{ post.data.title }}</h2>
             <h3>{{ post.date | readableDateTime }}</h3>
             <p>
