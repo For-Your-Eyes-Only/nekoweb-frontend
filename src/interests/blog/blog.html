@@ -4,26 +4,39 @@ CSSNesting: ../../CSS/
 pageName: blog
 pageNesting: ../../
 ---
-    <div id="mainContainer">
-        <div id="category-links">
-            <h1>Categories</h1>
-            <ul>
-                {%- for category in collections.categories -%}
-                        <a href="{{ page.pageNesting }}/interests/blog/categories/{{ category | slugify }}/index.html">{{ category }}</a>
-                {%- endfor -%}
-            </ul>
-        </div>
-        <div id="text-box">
-            <h1>Blog Posts</h1>
-            <ul>
-                {%- for post in collections.post | reverse -%}
-                    <h2>{{ post.data.title }}</h2>
-                    <h3>{{ post.date | readableDateTime }}</h3>
-                    <p>
-                        {% excerpt post %}
-                    </p>
-                    </br>
-                {%- endfor -%}
-            </ul>
-        </div>
+<div id="mainContainer">
+    <div id="category-links">
+        <h1>Categories</h1>
+        <ul>
+            {%- for category in collections.categories -%}
+                <li>
+                    <a href="{{ page.pageNesting }}/interests/blog/categories/{{ category | slugify }}/index.html">{{ category }}</a>
+                </li>
+            {%- endfor -%}
+        </ul>
     </div>
+    <div id="text-box">
+        <h1>Blog Posts</h1>
+        <ul>
+            {%- for post in collections.post | reverse -%}
+                <h2>{{ post.data.title }}</h2>
+                <h3>{{ post.date | readableDateTime }}</h3>
+                <p>
+                    {% excerpt post %}
+                </p>
+                <!-- TODO: Need some kind of unique identifier per post here -->
+                <section class="comments" data-post-id="{{ post.url }}">
+                    <h2>Comments</h2>
+                    <div class="comment-list"></div>
+                    <form class="comment-form">
+                        <input type="text" maxlength="40" class="comment-author" name="author" placeholder="Name" required />
+                        <textarea type="text" maxlength="600" class="comment-text" name="text" placeholder="600 characters max" required></textarea>
+                        <button class="comment-post" type="submit">Post</button>
+                    </form>
+                </section>
+                </br>
+            {%- endfor -%}
+        </ul>
+    </div>
+</div>
+<script src="../../scripts/javaScript/blogComments.js"></script>
