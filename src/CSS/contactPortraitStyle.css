@@ -1,22 +1,13 @@
 /* centers all child content */
 .mainContainer {
     border-radius: 12px;
-    overflow: hidden; /* clips child containers so that rounding can happen */
     font-size: 1.25em;
     display: flex;
     justify-items: stretch;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     width: 100vw;
     background: rgba(0, 0, 0, 0.727);  /* semi-transparent black */
     color: rgb(198, 198, 198);    /* Text color */
-}
-
-br {
-    display: block; /* makes it have a width */
-    content: ""; /* clears default height */
-    margin-top: 1vh; /* change this to whatever height you want it */
 }
 
 /* centers text box */
@@ -29,18 +20,24 @@ br {
     margin-bottom: 5%;
 }
 
-/* centers Millenium title */
+/* centers title */
 .text-box h1 {
     text-align: center;
     margin-top: 0;
     margin-left: 0;
-    margin-bottom: .25rem;
     font-size: 4vh;
 }
 
-/* creates tabbing */
+.text-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 3.25vh;
+}
+
 .text-box p {
-    text-align: left;
+    text-align: center;
+    color: rgb(174, 12, 44);
     margin-top: 0; /* get rid of space between each section and its paragraph */
     line-height: 1.1;
     margin-bottom: 0;
