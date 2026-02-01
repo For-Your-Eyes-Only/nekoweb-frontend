@@ -2,6 +2,13 @@
 // const API_BASE = tailScale VPN
 const API_BASE = "https://raspberrypi.tailb5c308.ts.net";
 
+/* protect against XSS */
+function escapeHtml(text: string): string {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
 /* 
 * Interfaces allow us to Shape a return value. API calls have a type of any by default
 * but if narrow its return type to something, we can then begin typing it.
@@ -9,13 +16,6 @@ const API_BASE = "https://raspberrypi.tailb5c308.ts.net";
 interface Blog_Comment {
     author: string;
     text: string;
-}
-
-/* protect against XSS */
-function escapeHtml(text: string): string {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
 }
 
 /* reusable Comment Render function */
