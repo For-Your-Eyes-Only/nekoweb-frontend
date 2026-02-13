@@ -1,0 +1,7 @@
+---
+title: Sorry I've been inactive
+date: 2026-02-12
+categories: ["Rambling"]
+tags: post
+---
+Little life update thing I suppose. I've started the process of working on the art for Millenium. I'm working with a pixel artist named Siang. They do incredible work. I wish I could share their stuff but their portfolio is private for now. I've also began playing a hacking <a href="pwnable.kr">CTF game</a> about reversing binarys on Linux servers. This has forced me to learn assembly x86 for intel architecture. Its about time. In the complete opposite direction of abstraction, I've been drilling leetcode for TypeScript as well. The job market really seems to favor high level coding so I want to reach a comfortable point with Typescript, plus I already use it for this website. Finally, I've been taking drum lessons to try and recover my wrist which has been suffering the last month and a half whenever I drum. All in all, life has gotten busy, but a good kinda busy.
