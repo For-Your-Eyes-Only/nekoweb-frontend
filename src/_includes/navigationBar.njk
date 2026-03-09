@@ -7,9 +7,9 @@
     <title>For Your Eyes Only</title>
     
     <!-- General styling-->
-    <link rel="stylesheet" media="only screen and (orientation: landscape)" href="{{ CSSNesting }}globalStyle.css{{ nocache }}"/>
+    <link rel="stylesheet" media="only screen and (orientation: landscape)" href="{{ GlobalCSSNesting }}globalStyle.css{{ nocache }}"/>
     <!-- Mobile portrait mode only-->
-    <link rel="stylesheet" media="only screen and (orientation: portrait)" href="{{ CSSNesting }}globalPortraitStyle.css{{ nocache }}"/>
+    <link rel="stylesheet" media="only screen and (orientation: portrait)" href="{{ GlobalCSSNesting }}globalPortraitStyle.css{{ nocache }}"/>
     
     <!-- Specific to page styling -->
     <!-- Landscape -->
@@ -21,7 +21,8 @@
     <header>
         <div>
             <ul id="navigationBar">
-                <li><a class="active" href="{{ pageNesting }}index.html">Home</a></li>
+                <li><a href="{{ pageNesting }}index.html">Home</a></li>
+                <li><a href="{{ pageNesting }}interviews.html">Interviews</a></li>
                 <li><a href="{{ pageNesting }}contact.html">Contact</a></li>
                 <li><a href="{{ pageNesting }}about.html">About</a></li>
             </ul>
