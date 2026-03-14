@@ -1,50 +1,118 @@
-/* centers all child content */
+body {
+    background-image: url('../../graphics/japan.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
 .mainContainer {
     border-radius: 12px;
     overflow: hidden; /* clips child containers so that rounding can happen */
     font-size: 1.25em;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
     justify-items: stretch;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    min-height: 90vh;
+    width: 70vw;
     background: rgba(0, 0, 0, 0.727);  /* semi-transparent black */
     color: rgb(198, 198, 198);    /* Text color */
 }
 
-/* centers text box */
 .text-box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-}
-
-/* centers Millenium title */
-.text-box h1 {
-    text-align: center;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: .5em;
-}
-
-/* creates tabbing */
-.text-box p {
+    height: 75vh;
+    overflow: scroll;
+    overflow-x: hidden;
     text-align: left;
-    margin-top: 0; /* get rid of space between each section and its paragraph */
+    padding: 40px 50px 40px 50px;
     line-height: 1.1;
+}
+
+#decent_treatment_logo {
+    margin-top: -6%;
+    margin-bottom: -6%;
+    margin-left: -5%;
+}
+
+#Blood_Orange_menu_screen {
+    height: 350px;
+    width: auto;
+}
+
+#Throne_promo_art {
+    height: 400px;
+    width: auto;
+}
+
+#Thermocline_battle {
+    height: 300px;
+    width: auto;
+}
+
+#Thermocline_promo_art {
+    height: 300px;
+    width: auto;
+}
+
+/* Page title */
+h1 {
+    color: rgb(198, 198, 198);
+    margin-top: 0;
     margin-bottom: 0;
 }
 
-/* Background Image */
-body {
-    background-image: url('../../graphics/japan.gif');
-    background-size: cover;       /* Scale image to cover entire window */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-position: center;  /* Center the image */
-    margin: 0;                    /* Remove default body margin */
-    height: 100vh;                /* Ensure body fills viewport height */
+/* Section headers (## in markdown) */
+h2 {
+    color: rgb(174, 12, 44);
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+/* Date / subheadings */
+h2 + p strong:only-child,
+p strong:first-child {
+    color: rgb(198, 198, 198);
+}
+
+/* Speaker labels — the bold **Name (Role):** lines */
+p > strong:first-child {
+    color: rgb(123, 8, 31);
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+p {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: rgb(182, 80, 101);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(174, 12, 44);
+    text-decoration: underline;
+}
+
+/* Italic emphasis (used for _can_ in one line) */
+em {
+    font-style: italic;
+    color: rgb(198, 198, 198);
+}
+
+/* Footer URL line at the bottom */
+.text-box p:last-child {
+    margin-top: 2em;
+    border-top: 1px solid rgba(174, 12, 44, 0.3);
+    padding-top: 1em;
+    color: rgb(150, 150, 150);
+    font-size: 0.9em;
 }
