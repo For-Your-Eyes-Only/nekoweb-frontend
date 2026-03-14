@@ -1,11 +1,34 @@
----
-layout: navigationBar.njk
-CSSNesting: ../CSS/interview_pages/
-GlobalCSSNesting: ../CSS/
-pageName: decent_treatment
-pageNesting: ../
----
-<div class="mainContainer">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Your Eyes Only</title>
+    
+    <!-- General styling-->
+    <link rel="stylesheet" media="only screen and (orientation: landscape)" href="../CSS/globalStyle.css?nocache=1773529174213"/>
+    <!-- Mobile portrait mode only-->
+    <link rel="stylesheet" media="only screen and (orientation: portrait)" href="../CSS/globalPortraitStyle.css?nocache=1773529174213"/>
+    
+    <!-- Specific to page styling -->
+    <!-- Landscape -->
+    <link rel="stylesheet" media="only screen and (orientation: landscape)" href="../CSS/interview_pages/decent_treatmentStyle.css?nocache=1773529174213"/>
+    <!-- Portrait -->
+    <link rel="stylesheet" media="only screen and (orientation: portrait)" href="../CSS/interview_pages/decent_treatmentPortraitStyle.css?nocache=1773529174213"/>
+</head>
+<body>
+    <header>
+        <div>
+            <ul id="navigationBar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../interviews.html">Interviews</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="mainContainer">
     <div class="text-box">
         <h1>Dean Reynolds AKA Decent Treatment</h1>
         <p><strong>March 6, 2026</strong></p>
@@ -552,3 +575,5 @@ pageNesting: ../
     </div>
     <script src="../scripts/javaScript/blogComments.js"></script>
 </div>
+</body>
+</html>
