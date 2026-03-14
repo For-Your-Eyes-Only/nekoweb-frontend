@@ -1,25 +1,27 @@
-/* centers all child content */
+/* Background Image */
+body {
+    background-image: url('../graphics/japan.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+}
+
 .mainContainer {
     border-radius: 12px;
-    overflow: hidden; /* clips child containers so that rounding can happen */
+    overflow: hidden;
     font-size: 1.25em;
     display: flex;
     justify-items: stretch;
-    margin-top: 0;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.727);  /* semi-transparent black */
-    color: rgb(198, 198, 198);    /* Text color */
+    background: rgba(0, 0, 0, 0.727);
+    color: rgb(198, 198, 198);
 }
 
-br {
-    display: block; /* makes it have a width */
-    content: ""; /* clears default height */
-    margin-top: 1vh; /* change this to whatever height you want it */
-}
-
-/* centers text box */
 .text-box {
     display: flex;
     flex-direction: column;
@@ -27,32 +29,35 @@ br {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
+    width: 100%;
 }
 
-/* centers Millenium title */
 .text-box h1 {
     text-align: center;
     margin-top: 0;
     margin-left: 0;
-    margin-bottom: .25rem;
-    font-size: 4vh;
+    margin-bottom: 2rem;
 }
 
-/* creates tabbing */
-.text-box p {
-    text-align: left;
-    margin-top: 0; /* get rid of space between each section and its paragraph */
-    line-height: 1.1;
-    margin-bottom: 0;
-    font-size: 2.25vh;
+.text-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
-/* Background Image */
-body {
-    background-image: url('../graphics/japan.gif');
-    background-size: cover;       /* Scale image to cover entire window */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-position: center;  /* Center the image */
-    margin: 0;                    /* Remove default body margin */
-    height: 100vh;                /* Ensure body fills viewport height */
+.text-box ul li {
+    border: 2px solid rgb(123, 8, 31);
+    margin-bottom: 0.5rem;
+}
+
+.text-box ul li:hover {
+    background-color: rgb(123, 8, 31);
+}
+
+.text-box ul li a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(198, 198, 198);
 }
